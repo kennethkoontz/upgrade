@@ -1,0 +1,58 @@
+html, body{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: aliceblue;
+    
+}
+.bluehead{
+    background-color:#0C59CF;
+    
+    
+    width: 100%;
+    
+    
+}
+.universalnav{
+    text-align:right;
+    font-size:20px;
+}
+.table{
+    background-color:white;
+    color:#444444;
+    width:100%;
+}
+a{
+    color:#444444;
+}
+.upgradelogo{
+    margin-left:12rem;
+    margin-right:12rem;
+    font-size: 36px;
+    float: right;
+    text-align:right;
+    margin-bottom: 1rem;
+    width:100%;
+    
+}
+ul{
+    margin-left:12rem;
+    margin-right:12rem;
+    padding:0;
+    
+}
+li{
+    background-color:aliceblue;
+    display:inline;
+    padding: .75rem;
+    border-radius:5px;
+}
+h1{
+    color:orangered;
+    text-align:center;
+}
