@@ -23,10 +23,9 @@ body{
     font-size:20px;
 }
 .table{
-    margin-left:12rem;
-    margin-right:12rem;
+    background-color:white;
     color:#444444;
-    width:82.5%;
+    width:100%;
 }
 a{
     color:#444444;
@@ -52,5 +51,9 @@ li{
     display:inline;
     padding: .75rem;
     border-radius:5px;
+}
+h1{
+    color:orangered;
+    text-align:center;
 }
 
