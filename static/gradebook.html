@@ -2,30 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>UpGrade - Gradebook</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="bluehead">
+        
         
         <div class="upgradelogo">
             <img src="#">UpGrade</img>
             
         </div>
+        <span class="usersname">
+            <span><h3>Lindsey Roman</h3></span>
+            <span class="logout"><a href="login_tree/login.html"><p><u>Log Out</u></p></a></span>
+        </span>
         <nav class="universalnav">
             <ul>
-                <li id="sgradebook"><a href="#">Gradebook</a></li>
-                <li><a href="#">Transcripts</a></li>
-                <li><a href="#">Classes</a></li>
-                <li><a href="#">Teachers</a></li>
+                <li id="sgradebook"><a href="gradebook.html">Gradebook</a></li>
+                <li><a href="transcripts.html">Transcripts</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
             </ul>
         </nav>
     </header>
+    <h1>Gradebook</h1>
+    <div class="container">
+        <table class="table table-bordered">
+            <tr>
+              <th>Period</th>
+              <th>Class Name</th>
+              <th>Class Id</th>
+              <th>Grade</th>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td><a href="classes/worldhistory.html">World History</a></td>
+              <td>H05</td>
+              <td>A+</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td><a href="classes/math2.html">Math 2</a></td>
+              <td>M12</td>
+              <td>A</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td><a href="classes/art1.html">Art 1</a></td>
+              <td>A01</td>
+              <td>B+</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td><a href="classes/biology.html">Biology</a></td>
+              <td>S19</td>
+              <td>C-</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><a href="classes/computer.html">Computer Programming</a></td>
+              <td>T07</td>
+              <td>A</td>
+          </tr>
+          <tr>
+              <td>6</td>
+              <td><a href="classes/english2.html">English 2</a></td>
+              <td>E09</td>
+              <td>A-</td>
+          </tr>
+        </table>
+        
+    </div>
     
-    
-
-      <main>  
+    <h1>Upcoming Assignments</h1>
+      <main class="container">  
         <table class="table table-bordered">
           <tr>
               <th>Assignment Name</th>
