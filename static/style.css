@@ -31,13 +31,13 @@ a{
     color:#444444;
 }
 .upgradelogo{
-    margin-left:12rem;
+    
     margin-right:12rem;
     font-size: 36px;
     float: right;
     text-align:right;
     margin-bottom: 1rem;
-    width:100%;
+    width:60%;
     
 }
 ul{
@@ -56,4 +56,19 @@ h1{
     color:orangered;
     text-align:center;
 }
+h3{
+    margin-top:0;
+    margin-bottom: 0;
+    margin-right: 5rem;
+    background-color:#0C59CF;
+    padding-top: 1rem;
+    padding-left: 5rem;
+}
 
+.logout{
+    display: block;
+}
+p{
+    padding-left: 5rem;
+    width:11rem;
+}

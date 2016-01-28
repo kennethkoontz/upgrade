@@ -31,13 +31,13 @@ a{
     color:#444444;
 }
 .upgradelogo{
-    margin-left:12rem;
+    
     margin-right:12rem;
     font-size: 36px;
     float: right;
     text-align:right;
     margin-bottom: 1rem;
-    width:100%;
+    width:60%;
     
 }
 ul{
@@ -55,4 +55,53 @@ li{
 h1{
     color:orangered;
     text-align:center;
+}
+h3{
+    margin-top:0;
+    margin-bottom: 0;
+    margin-right: 5rem;
+    background-color:#0C59CF;
+    padding-top: 1rem;
+    padding-left: 5rem;
+}
+
+.logout{
+    display: block;
+}
+p{
+    padding-left: 5rem;
+    width:11rem;
+}
+.profile_form{
+    background-color:white;
+    border: 1px solid #444444;
+    border-radius:5px;
+}
+.profile_photo{
+    height:40px;
+    width:40px;
+    margin-left:2px;
+    margin-bottom:2px;
+}
+
+.profile_classes{
+    display:block;
+}
+.classes{
+    display:block;
+}
+aside{
+    display:inline;
+}
+article{
+    background-color:white;
+    border:1px solid #444444;
+    border-radius:5px;
+    width:45%;
+}
+.main_container{
+    margin: 0 auto;
+}
+.container{
+    margin-bottom:2rem;
 }
