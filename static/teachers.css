@@ -73,3 +73,36 @@ p{
     padding-left: 5rem;
     width:11rem;
 }
+.profile_form{
+    background-color:white;
+    border: 1px solid #444444;
+    border-radius:5px;
+}
+.profile_photo{
+    height:40px;
+    width:40px;
+    margin-left:2px;
+    margin-bottom:2px;
+}
+
+.profile_classes{
+    display:block;
+}
+.classes{
+    display:block;
+}
+aside{
+    display:inline;
+}
+article{
+    background-color:white;
+    border:1px solid #444444;
+    border-radius:5px;
+    width:45%;
+}
+.main_container{
+    margin: 0 auto;
+}
+.container{
+    margin-bottom:2rem;
+}
