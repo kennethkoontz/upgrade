@@ -1,31 +1,23 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>UpGrade - Teachers</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="teachers.css">
-</head>
-<body>
+
     <header class="bluehead">
         
         
         <div class="upgradelogo">
             <img 
             height="80px"
-            src="http://i.imgur.com/R5m3DUw.png"></img>
+            src="https://i.imgur.com/R5m3DUw.png"></img>
             
         </div>
         <span class="usersname">
             <span><h3>Lindsey Roman</h3></span>
-            <span class="logout"><a href="#"><p><u>Log Out</u></p></a></span>
+            <span class="logout"><a ui-sref="#"><p><u>Log Out</u></p></a></span>
         </span>
         <nav class="universalnav">
             <ul>
-                <li id="sgradebook"><a href="gradebook.html">Gradebook</a></li>
-                <li><a href="transcripts.html">Transcripts</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="teachers.html">Teachers</a></li>
+                <li><a ui-sref="gradebook">Gradebook</a></li>
+                <li><a ui-sref="transcripts">Transcripts</a></li>
+                <li><a ui-sref="classes">Classes</a></li>
+                <li><a ui-sref="teachers">Teachers</a></li>
             </ul>
         </nav>
     </header>
@@ -39,8 +31,8 @@
                     <div><b>Name:</b> Henry Smith</div>
                     <div><b>Teacher Id:</b> 61818</div>
                     <div><b>Classes:</b>
-                        <p><a href="classes/worldhistory.html">World History</a></p>
-                        <p><a href="classes/ushistory.html">US History</a></p>
+                        <p><a ui-sref="classes/worldhistory">World History</a></p>
+                        <p><a ui-sref="classes/ushistory">US History</a></p>
                     </div>
                     <div><b>Room Number:</b> 42</div>
                     
@@ -57,9 +49,9 @@
                     <div><b>Name:</b> Dave Peterson</div>
                     <div><b>Teacher Id:</b> 78392</div>
                     <div><b>Classes:</b>
-                        <p><a href="classes/math2.html">Math 2</a></p>
-                        <p><a href="classes/hmath2.html">Honors Math 2</a></p>
-                        <p><a href="classes/matha.html">Math Analasyis</a></p>
+                        <p><a ui-sref="classes/math2">Math 2</a></p>
+                        <p><a ui-sref="classes/hmath2">Honors Math 2</a></p>
+                        <p><a ui-sref="classes/matha">Math Analasyis</a></p>
                     </div>
                     <div><b>Room Number:</b> 16</div>
                     
@@ -76,9 +68,9 @@
                     <div><b>Name:</b> Kate Waldner</div>
                     <div><b>Teacher Id:</b> 17542</div>
                     <div><b>Classes:</b>
-                        <p><a href="classes/art1.html">Art 1</a></p>
-                        <p><a href="classes/dp1.html">Drawing and Painting 1</a></p>
-                        <p><a href="classes/dp23.html">Drawing and Painting 2-3</a></p>
+                        <p><a ui-sref="classes/art1">Art 1</a></p>
+                        <p><a ui-sref="classes/dp1">Drawing and Painting 1</a></p>
+                        <p><a ui-sref="classes/dp23">Drawing and Painting 2-3</a></p>
                     </div>
                     <div><b>Room Number:</b> 76</div>
                     
@@ -95,7 +87,7 @@
                     <div><b>Name:</b> Eddie Hughes</div>
                     <div><b>Teacher Id:</b> 97324</div>
                     <div><b>Classes:</b>
-                        <p><a href="classes/biology.html">Biology</a></p>
+                        <p><a ui-sref="classes/biology">Biology</a></p>
                         
                     </div>
                     <div><b>Room Number:</b> 10</div>
@@ -113,8 +105,8 @@
                     <div><b>Name:</b> Ken Koontz</div>
                     <div><b>Teacher Id:</b> 93245</div>
                     <div><b>Classes:</b>
-                        <p><a href="classes/computer.html">Computer Programming</a></p>
-                        <p><a href="classes/hjava.html">Honors Javascript</a></p>
+                        <p><a ui-sref="classes/computer">Computer Programming</a></p>
+                        <p><a ui-sref="classes/hjava">Honors Javascript</a></p>
                     </div>
                     <div><b>Room Number:</b> 02</div>
                     
@@ -131,8 +123,8 @@
                     <div><b>Name:</b> Samantha Harvey</div>
                     <div><b>Teacher Id:</b> 36345</div>
                     <div><b>Classes:</b>
-                        <p><a href="classes/english2.html">English 2</a></p>
-                        <p><a href="classes/english4.html">English 4</a></p>
+                        <p><a ui-sref="classes/english2">English 2</a></p>
+                        <p><a ui-sref="classes/english4">English 4</a></p>
                         
                     </div>
                     <div><b>Room Number:</b> 23</div>
@@ -141,5 +133,3 @@
             </div>
         </article>
     </div>
-</body>
-</html>
