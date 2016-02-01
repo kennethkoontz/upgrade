@@ -4,6 +4,7 @@ html, body{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    padding-bottom:4rem;
 }
 
 body{
@@ -37,7 +38,7 @@ a{
     float: right;
     text-align:right;
     margin-bottom: 1rem;
-    width:60%;
+    width:75%;
     
 }
 ul{
@@ -72,4 +73,72 @@ p{
     color:orangered;
     padding-left: 5rem;
     width:11rem;
+}
+@media only screen and (max-width: 1033px) {
+  .upgradelogo{
+      width:70%;
+  }
+}
+@media only screen and (max-width: 859px) {
+  .upgradelogo{
+      width:60%;
+  }
+}
+@media only screen and (max-width: 689px) {
+  li{
+      font-size:18px;
+  }
+}
+@media only screen and (max-width: 849px) {
+  li{
+      font-size:16px;
+  }
+  .upgradelogo{
+      width:60%;
+  }
+}
+@media only screen and (max-width: 657px) {
+  .upgradelogo{
+      width:50%;
+  }
+}
+@media only screen and (max-width: 619px) {
+  li{
+      padding:.75rem;
+  }
+}
+@media only screen and (max-width: 615px) {
+  li{
+      font-size:14px;
+  }
+}
+@media only screen and (max-width: 587px) {
+  ul{
+      margin:0;
+  }
+  img{
+      height:50px;
+  }
+  .upgradelogo{
+      margin-right:1rem;
+      width:20%;
+  }
+  h3{
+      font-size:14px;
+      margin:0;
+  }
+  
+}
+@media only screen and (max-width: 442px) {
+  ul{
+      text-align:left;
+      float:left;
+  }
+  
+}
+@media only screen and (max-width: 346px) {
+  ul{
+    display:block;  
+  }
+  
 }
