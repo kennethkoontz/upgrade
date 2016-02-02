@@ -7,17 +7,13 @@ angular
           url: "/gradebook",
           templateUrl: "gradebook.html"
         })
-  .state('admin', {
-          url: "/admmin",
-          templateUrl: "admin.html"
+  .state('login', {
+          url: "/login",
+          templateUrl: "login.html"
         })
   .state('classes', {
           url: "/classes",
           templateUrl: "classes.html"
-        })
-  .state('index', {
-          url: "/index",
-          templateUrl: "index.html"
         })
         .state('register', {
           url: "/register",
@@ -32,6 +28,11 @@ angular
           url: "/transcripts",
           templateUrl: "transcripts.html"
         });
+        
+        
+        
+        
+        
   
   
   
