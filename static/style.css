@@ -84,6 +84,12 @@ p{
 .reglogo{
   text-align:center;
 }
+input{
+  width:70%;
+}
+button{
+  margin-top:3rem;
+}
 @media only screen and (max-width: 1033px) {
   .upgradelogo{
       width:70%;
