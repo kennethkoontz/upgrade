@@ -4,11 +4,11 @@ html, body{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    padding-bottom:4rem;
 }
 
 body{
     background-color: aliceblue;
+    padding-bottom:4rem;
     
 }
 .bluehead{
@@ -74,15 +74,14 @@ p{
     padding-left: 5rem;
     width:11rem;
 }
-.outline{
-  border: 1px solid #444444;
-  background-color:white;
-  border-radius:5px;
-  margin-bottom:1rem;
-  width:40%;
+.class_form{
+    background-color:white;
+    border:1px solid #444444;
+    border-radius:5px;
+    padding:2rem;
 }
-.reglogo{
-  text-align:center;
+h2{
+    color:#444444;
 }
 @media only screen and (max-width: 1033px) {
   .upgradelogo{
