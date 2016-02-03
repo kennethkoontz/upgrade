@@ -1,5 +1,5 @@
 angular
     .module('app')
-    .controller('GradebookController', function($scope) {
+    .controller('A1Controller', function($scope) {
         
     });
