@@ -5,7 +5,8 @@ angular
       $stateProvider
         .state('gradebook', {
           url: "/gradebook",
-          templateUrl: "gradebook.html"
+          templateUrl: "gradebook.html",
+          controller: 'GradebookController'
         })
   .state('login', {
           url: "/login",
