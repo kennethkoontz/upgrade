@@ -28,6 +28,13 @@
               <th>Class Id</th>
               <th>Grade</th>
           </tr>
+          <tr ng-repeat="class in classes">
+              <td><a ui-sref="">edit</a> | <a ui-sref="">remove</a></td>
+              <td>{{ class.period }}</td>
+              <td><a ui-sref="worldhistory">{{ class.name }}</a></td>
+              <td>{{ class.class_id }}</td>
+              <td>{{ class.grade }}</td>
+          </tr>
           <tr>
               <td><a ui-sref="">edit</a> | <a ui-sref="">remove</a></td>
               <td>1</td>
