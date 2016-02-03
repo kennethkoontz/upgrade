@@ -1,12 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>UpGrade - Honors Math</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
    <header class="bluehead">
         
         
@@ -18,21 +10,21 @@
         </div>
         <span class="usersname">
             <span><h3>Lindsey Roman</h3></span>
-            <span class="logout"><a href="#"><p><u>Log Out</u></p></a></span>
+            <span class="logout"><a ui-sref="login"><p><u>Log Out</u></p></a></span>
         </span>
         <nav class="universalnav">
             <ul>
-                <li id="sgradebook"><a href="..\gradebook.html">Gradebook</a></li>
-                <li><a href="..\transcripts.html">Transcripts</a></li>
-                <li><a href="..\classes.html">Classes</a></li>
-                <li><a href="..\teachers.html">Teachers</a></li>
+                <li id="sgradebook"><a ui-sref="gradebook">Gradebook</a></li>
+                <li><a ui-sref="transcripts">Transcripts</a></li>
+                <li><a ui-sref="classes">Classes</a></li>
+                <li><a ui-sref="teachers">Teachers</a></li>
             </ul>
         </nav>
     </header>
     <h1> Honors Math 2</h1>
     <!-- class form-->
     <div class="container class_form">
-        <a href="" class="pull-right">Edit</a>
+        <a ui-sref="" class="pull-right">Edit</a>
         <span>
             <h2 style="display:inline;"><b>Class Id:</b> M11</h2>
             
@@ -45,7 +37,7 @@
     </div>
     <h1>Upcoming Assignments</h1>
     <div class="container">
-        <a href="" class="pull-right">Add an Assignment</a>
+        <a ui-sref="" class="pull-right">Add an Assignment</a>
         <table class="table table-bordered">
             <tr>
                 <th></th>
@@ -53,21 +45,19 @@
                 <th>Assignment Number</th>
             </tr>
             <tr>
-                <td><a href="">Edit</a> | <a href="">Remove</a></td>
+                <td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>
                 <td>Unit 4.1 Notes</td>
                 <td>M001</td>
             </tr>
             <tr>
-                <td><a href="">Edit</a> | <a href="">Remove</a></td>
+                <td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>
                 <td>Unit 4 Test</td>
                 <td>M002</td>
             </tr>
             <tr>
-                <td><a href="">Edit</a> | <a href="">Remove</a></td>
+                <td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>
                 <td>Unit 4.1 Summary</td>
                 <td>M003</td>
             </tr>
         </table>
     </div>
-</body>
-</html>
