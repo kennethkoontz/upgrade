@@ -22,114 +22,23 @@
         </nav>
     </header>
     <h1>Teachers</h1>
-    <div class="container outline main_container" align="center">
+    <div class="container outline main_container" align="center" ng-repeat="teacher in teachers">
         <article>
             <div class="row">
                 <div class="col-xs-6"><img height="200px"
                 width="200px"src="http://partnerseeds.ie/images/user_blank_profile.gif"></img></div>
                 <div class="col-xs-6">
-                    <div><b>Name:</b> Henry Smith</div>
-                    <div><b>Teacher Id:</b> 61818</div>
+                    <div><b>Name:</b>{{ teacher.name }}</div>
+                    <div><b>Teacher Id:</b> {{ teacher._id }}</div>
                     <div><b>Classes:</b>
-                        <p><a ui-sref="worldhistory">World History</a></p>
-                        <p><a ui-sref="ushistory">US History</a></p>
+                        <p style="color:#444444;">{{ teacher.class_1 }}</p>
+                        <p style="color:#444444;">{{ teacher.class_2 }}</p>
+                        <p style="color:#444444;">{{ teacher.class_3 }}</p>
                     </div>
-                    <div><b>Room Number:</b> 42</div>
+                    <div><b>Room Number:</b> {{ teacher.room }}</div>
                     
                 </div>
             </div>
         </article>
     </div>
-    <div class="container outline" align="center">
-        <article>
-            <div class="row">
-                <div class="col-xs-6"><img height="200px"
-                width="200px"src="http://partnerseeds.ie/images/user_blank_profile.gif"></img></div>
-                <div class="col-xs-6">
-                    <div><b>Name:</b> Dave Peterson</div>
-                    <div><b>Teacher Id:</b> 78392</div>
-                    <div><b>Classes:</b>
-                        <p><a ui-sref="math2">Math 2</a></p>
-                        <p><a ui-sref="hmath2">Honors Math 2</a></p>
-                        <p><a ui-sref="matha">Math Analasyis</a></p>
-                    </div>
-                    <div><b>Room Number:</b> 16</div>
-                    
-                </div>
-            </div>
-        </article>
-    </div>
-    <div class="container outline" align="center">
-        <article>
-            <div class="row">
-                <div class="col-xs-6"><img height="200px"
-                width="200px"src="http://partnerseeds.ie/images/user_blank_profile.gif"></img></div>
-                <div class="col-xs-6">
-                    <div><b>Name:</b> Kate Waldner</div>
-                    <div><b>Teacher Id:</b> 17542</div>
-                    <div><b>Classes:</b>
-                        <p><a ui-sref="art1">Art 1</a></p>
-                        <p><a ui-sref="dp1">Drawing and Painting 1</a></p>
-                        <p><a ui-sref="dp23">Drawing and Painting 2-3</a></p>
-                    </div>
-                    <div><b>Room Number:</b> 76</div>
-                    
-                </div>
-            </div>
-        </article>
-    </div>
-    <div class="container outline" align="center">
-        <article>
-            <div class="row">
-                <div class="col-xs-6"><img height="200px"
-                width="200px"src="http://partnerseeds.ie/images/user_blank_profile.gif"></img></div>
-                <div class="col-xs-6">
-                    <div><b>Name:</b> Eddie Hughes</div>
-                    <div><b>Teacher Id:</b> 97324</div>
-                    <div><b>Classes:</b>
-                        <p><a ui-sref="biology">Biology</a></p>
-                        
-                    </div>
-                    <div><b>Room Number:</b> 10</div>
-                    
-                </div>
-            </div>
-        </article>
-    </div>
-    <div class="container outline" align="center">
-        <article>
-            <div class="row">
-                <div class="col-xs-6"><img height="200px"
-                width="200px"src="http://partnerseeds.ie/images/user_blank_profile.gif"></img></div>
-                <div class="col-xs-6">
-                    <div><b>Name:</b> Ken Koontz</div>
-                    <div><b>Teacher Id:</b> 93245</div>
-                    <div><b>Classes:</b>
-                        <p><a ui-sref="computer">Computer Programming</a></p>
-                        <p><a ui-sref="hjava">Honors Javascript</a></p>
-                    </div>
-                    <div><b>Room Number:</b> 02</div>
-                    
-                </div>
-            </div>
-        </article>
-    </div>
-    <div class="container outline" align="center">
-        <article>
-            <div class="row">
-                <div class="col-xs-6"><img height="200px"
-                width="200px"src="http://partnerseeds.ie/images/user_blank_profile.gif"></img></div>
-                <div class="col-xs-6">
-                    <div><b>Name:</b> Samantha Harvey</div>
-                    <div><b>Teacher Id:</b> 36345</div>
-                    <div><b>Classes:</b>
-                        <p><a ui-sref="english2">English 2</a></p>
-                        <p><a ui-sref="english4">English 4</a></p>
-                        
-                    </div>
-                    <div><b>Room Number:</b> 23</div>
-                    
-                </div>
-            </div>
-        </article>
-    </div>
+    

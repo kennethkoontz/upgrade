@@ -11,10 +11,12 @@ angular
       .state('login', {
         url: "/login",
         templateUrl: "login.html"
+        
       })
       .state('classes', {
         url: "/classes",
-        templateUrl: "classes.html"
+        templateUrl: "classes.html",
+        controller: 'ClassesController'
       })
       .state('register', {
         url: "/register",
@@ -22,7 +24,8 @@ angular
       })
       .state('teachers', {
         url: "/teachers",
-        templateUrl: "teachers.html"
+        templateUrl: "teachers.html",
+        controller: "TeachersController"
       })
     .state('transcripts', {
       url: "/transcripts",
@@ -33,7 +36,8 @@ angular
 
     .state('worldhistory', {
       url: "/worldhistory",
-      templateUrl: "class/worldhistory.html"
+      templateUrl: "class/worldhistory.html",
+      controller: "WhController"
     })
 
     .state('art1', {

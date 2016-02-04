@@ -1,4 +1,4 @@
-
+<!-- THIS EQUALS TEACHER VIEW -->
    <header class="bluehead">
         
         
@@ -24,40 +24,42 @@
     <h1>World History</h1>
     <!-- class form-->
     
-    <div class="container class_form">
-        <a ui-sref="" class="pull-right">Edit</a>
+    <div class="container class_form" ng-repeat="form in forms">
+        <!--<a ui-sref="" class="pull-right">Edit</a>-->
         <span>
-            <h2 style="display:inline;"><b>Class Id:</b> H05</h2>
+            <h2 style="display:inline;"><b>Class Id:</b> {{ form._id }}</h2>
             
-            <h2 style="display:inline; margin-left:4rem;">    <b>Teacher:</b> Henry Smith</h2>
+            <h2 style="display:inline; margin-left:4rem;">    <b>Teacher:</b> {{ form.teacher }}</h2>
         </span>
         <span style="display:block; margin-top:2rem;">
-            <h2 style="display:inline;"><b>Course Description:</b> World History is a year-long required survey course that explores the key events and global historical developments since 1350 A.C.E. that have shaped the world we live in today. The scope of Modern World History provides the latitude to range widely across all aspects of human experience: economics, science, religion, philosophy, politics & law, military conflict, literature & the arts. </h2>
-            <h2><b>Number of Students:</b> 29</h2>
+            <h2 style="display:inline;"><b>Course Description:</b> {{ form.description }}</h2>
+            <h2><b>Number of Students:</b> {{ form.students }}</h2>
         </span>
     </div>
     <h1>Upcoming Assignments</h1>
     <div class="container">
-        <a ui-sref="" class="pull-right">Add an Assignment</a>
+        <!--<a ui-sref="" class="pull-right">Add an Assignment</a>-->
         <table class="table table-bordered">
             <tr>
-                <th></th>
+                <!--<th></th>-->
                 <th>Assignment Name</th>
                 <th>Assignment Number</th>
+                <th>Date Assigned</th>
             </tr>
-            <tr>
-                <td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>
-                <td>Early Chinese Dynasties</td>
-                <td>W001</td>
+            <tr ng-repeat="assignment in assignments">
+                <!--<td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>-->
+                <td>{{ assignment.name }}</td>
+                <td>{{ assignment.number }}</td>
+                <td>{{ assignment.date }}</td>
             </tr>
             <tr>
                 
-                <td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>
+                <!--<td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>-->
                 <td>Chinese Wars</td>
                 <td>W002</td>
             </tr>
             <tr>
-                <td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>
+                <!--<td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>-->
                 <td>Asian Religions</td>
                 <td>W003</td>
             </tr>
