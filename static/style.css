@@ -10,6 +10,7 @@ html, body{
 body{
     background-color: aliceblue;
     
+    
 }
 .bluehead{
     background-color:#0C59CF;
@@ -161,5 +162,10 @@ button{
 @media only screen and (min-width: 1425px) {
   .upgradelogo{
       width:80%;
+  }
+}
+@media only screen and (min-width: 1782px) {
+  .upgradelogo{
+      width:85%;
   }
 }

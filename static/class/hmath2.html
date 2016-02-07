@@ -1,4 +1,4 @@
-
+<!-- THIS EQUALS TEACHER VIEW -->
    <header class="bluehead">
         
         
@@ -21,43 +21,38 @@
             </ul>
         </nav>
     </header>
-    <h1> Honors Math 2</h1>
+    <h1>Honors Math 2</h1>
     <!-- class form-->
-    <div class="container class_form">
-        <a ui-sref="" class="pull-right">Edit</a>
+    
+    <div class="container class_form" ng-repeat="form in forms">
+        <!--<a ui-sref="" class="pull-right">Edit</a>-->
         <span>
-            <h2 style="display:inline;"><b>Class Id:</b> M11</h2>
+            <h2 style="display:inline;"><b>Class Id:</b> {{ form._id }}</h2>
             
-            <h2 style="display:inline; margin-left:4rem;">    <b>Teacher:</b> Dave Peterson</h2>
+            <h2 style="display:inline; margin-left:4rem;">    <b>Teacher:</b> {{ form.teacher }}</h2>
         </span>
         <span style="display:block; margin-top:2rem;">
-            <h2 style="display:inline;"><b>Course Description:</b> lorem ipsum</h2>
-            <h2><b>Number of Students:</b> 12</h2>
+            <h2 style="display:inline;"><b>Course Description:</b> {{ form.description }}</h2>
+            <h2><b>Number of Students:</b> {{ form.students }}</h2>
         </span>
     </div>
     <h1>Upcoming Assignments</h1>
     <div class="container">
-        <a ui-sref="" class="pull-right">Add an Assignment</a>
+        <!--<a ui-sref="" class="pull-right">Add an Assignment</a>-->
         <table class="table table-bordered">
             <tr>
-                <th></th>
+                <!--<th></th>-->
                 <th>Assignment Name</th>
                 <th>Assignment Number</th>
+                <th>Date Assigned</th>
             </tr>
-            <tr>
-                <td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>
-                <td>Unit 4.1 Notes</td>
-                <td>M001</td>
+            <tr ng-repeat="assignment in assignments">
+                <!--<td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>-->
+                <td>{{ assignment.name }}</td>
+                <td>{{ assignment.number }}</td>
+                <td>{{ assignment.date }}</td>
             </tr>
-            <tr>
-                <td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>
-                <td>Unit 4 Test</td>
-                <td>M002</td>
-            </tr>
-            <tr>
-                <td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>
-                <td>Unit 4.1 Summary</td>
-                <td>M003</td>
-            </tr>
+            
         </table>
     </div>
+    
