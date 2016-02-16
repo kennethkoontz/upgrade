@@ -84,10 +84,10 @@
                 <th>Teacher</th>
                 <th>Teacher Id</th>
             </tr>
-            <tr ng-repeat="class in classes">
+            <tr ng-repeat="class in ClassesCtrl.classes">
                 
                 <td>{{ class.period }}</td>
-                <td><a ui-sref="worldhistory">{{ class.name }}</a></td>
+                <td>{{ class.name }}</td>
                 <td>{{ class.class_id }}</td>
                 <td><a ui-sref="teachers">{{class.teacher}}</a></td>
                 <td>{{ class.teacher_id }}</td>

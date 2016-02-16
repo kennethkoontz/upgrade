@@ -22,7 +22,7 @@
         </nav>
     </header>
     <h1>Teachers</h1>
-    <div class="container outline main_container" align="center" ng-repeat="teacher in teachers">
+    <div class="container outline main_container" align="center" ng-repeat="teacher in TeachersCtrl.teachers">
         <article>
             <div class="row">
                 <div class="col-xs-6"><img height="200px"
@@ -31,7 +31,7 @@
                     <div><b>Name:</b>{{ teacher.name }}</div>
                     <div><b>Teacher Id:</b> {{ teacher._id }}</div>
                     <div><b>Classes:</b>
-                        <p style="color:#444444;">{{ teacher.class_1 }}</p>
+                        <a ><p style="color:#444444;">{{ teacher.class_1 }}</p></a>
                         <p style="color:#444444;">{{ teacher.class_2 }}</p>
                         <p style="color:#444444;">{{ teacher.class_3 }}</p>
                     </div>
