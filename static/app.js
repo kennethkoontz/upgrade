@@ -6,7 +6,7 @@ angular
       .state('gradebook', {
         url: "/gradebook",
         templateUrl: "gradebook.html",
-        controller: 'GradebookController'
+        controller: 'GradebookController as GradebookCtrl'
       })
       .state('login', {
         url: "/login",
