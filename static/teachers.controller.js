@@ -1,6 +1,6 @@
 angular
     .module('app')
-    .controller('TeachersController', function($scope{
+    .controller('TeachersController', function(){
         var vm = this;
         vm.teachers = [
           { name: 'Henry Smith', _id: '61818', class_1:'World History', class_2: 'US History', class_3: '', room: '42'},
