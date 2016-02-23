@@ -24,7 +24,7 @@
     <h1>World History</h1>
     <!-- class form-->
     
-    <div class="container class_form" ng-repeat="form in forms">
+    <div class="container class_form" ng-repeat="form in WhCtrl.forms">
         <!--<a ui-sref="" class="pull-right">Edit</a>-->
         <span>
             <h2 style="display:inline;"><b>Class Id:</b> {{ H05 }}</h2>
@@ -46,7 +46,7 @@
                 <th>W001</th>
                 <th>5/10/16</th>
             </tr>
-            <tr ng-repeat="assignment in assignments">
+            <tr ng-repeat="assignment in WhCtrl.assignments">
                 <!--<td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>-->
                 <td>{{ assignment.name }}</td>
                 <td>{{ assignment.number }}</td>
