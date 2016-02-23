@@ -42,15 +42,15 @@
         <table class="table table-bordered">
             <tr>
                 <!--<th></th>-->
-                <th>Unit 4.1 notes</th>
-                <th>c001</th>
-                <th>Date 5/9/16</th>
+                <th>Unit 4.1 Notes</th>
+                <th>Assignmr</th>
+                <th>Date Assigned</th>
             </tr>
             <tr ng-repeat="assignment in assignments">
                 <!--<td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>-->
-                <td>{{ Unit 4 test }}</td>
-                <td>{{ c002 }}</td>
-                <td>{{ 5/11/16 }}</td>
+                <td>{{ assignment.name }}</td>
+                <td>{{ assignment.number }}</td>
+                <td>{{ assignment.date }}</td>
             </tr>
             
         </table>
