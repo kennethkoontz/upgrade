@@ -21,19 +21,19 @@
             </ul>
         </nav>
     </header>
-    <h1>Math Analysis</h1>
+    <h1>Honors Math 2</h1>
     <!-- class form-->
     
     <div class="container class_form" ng-repeat="form in forms">
         <!--<a ui-sref="" class="pull-right">Edit</a>-->
         <span>
-            <h2 style="display:inline;"><b>Class Id:</b> {{ form._id }}</h2>
+            <h2 style="display:inline;"><b>Class Id:</b> {{ M11 }}</h2>
             
-            <h2 style="display:inline; margin-left:4rem;">    <b>Teacher:</b> {{ form.teacher }}</h2>
+            <h2 style="display:inline; margin-left:4rem;">    <b>Teacher:</b> {{ Dave Peterson }}</h2>
         </span>
         <span style="display:block; margin-top:2rem;">
-            <h2 style="display:inline;"><b>Course Description:</b> {{ form.description }}</h2>
-            <h2><b>Number of Students:</b> {{ form.students }}</h2>
+            <h2 style="display:inline;"><b>Course Description:</b> {{ lorem ipsum }}</h2>
+            <h2><b>Number of Students:</b> {{ 12 }}</h2>
         </span>
     </div>
     <h1>Upcoming Assignments</h1>
@@ -42,17 +42,15 @@
         <table class="table table-bordered">
             <tr>
                 <!--<th></th>-->
-                <th>Assignment Name</th>
-                <th>Assignment Number</th>
-                <th>Date Assigned</th>
+                <th>Unit 5.2 notes</th>
+                <th>M001</th>
+                <th>Date 5/9/16</th>
             </tr>
             <tr ng-repeat="assignment in assignments">
                 <!--<td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>-->
-                <td>{{ assignment.name }}</td>
-                <td>{{ assignment.number }}</td>
-                <td>{{ assignment.date }}</td>
+                <td>{{ Unit 5 test }}</td>
+                <td>{{ M002 }}</td>
+                <td>{{ 5/11/16 }}</td>
             </tr>
             
         </table>
-    </div>
-    
