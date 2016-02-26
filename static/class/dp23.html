@@ -27,13 +27,13 @@
     <div class="container class_form" ng-repeat="form in Dp23Ctrl.forms">
         <!--<a ui-sref="" class="pull-right">Edit</a>-->
         <span>
-            <h2 style="display:inline;"><b>Class Id:</b> {{ A03}}</h2>
+            <h2 style="display:inline;"><b>Class Id:</b> {{ form._id }}</h2>
             
-            <h2 style="display:inline; margin-left:4rem;">    <b>Teacher:</b> {{ Kate Waldner }}</h2>
+            <h2 style="display:inline; margin-left:4rem;">    <b>Teacher:</b> {{ form.teacher }}</h2>
         </span>
         <span style="display:block; margin-top:2rem;">
-            <h2 style="display:inline;"><b>Course Description:</b> {{ lorem ipsum }}</h2>
-            <h2><b>Number of Students:</b> {{ 19 }}</h2>
+            <h2 style="display:inline;"><b>Course Description:</b> {{ form.description }}</h2>
+            <h2><b>Number of Students:</b> {{ form.students }}</h2>
         </span>
     </div>
     <h1>Upcoming Assignments</h1>
@@ -42,15 +42,15 @@
         <table class="table table-bordered">
             <tr>
                 <!--<th></th>-->
-                <th>Sketchbook Week 4</th>
-                <th>W001</th>
-                <th>5/10/16</th>
+                <th>Assignment Name</th>
+                <th>Assignment Number</th>
+                <th>Date Assigned</th>
             </tr>
             <tr ng-repeat="assignment in Dp23Ctrl.assignments">
                 <!--<td><a ui-sref="">Edit</a> | <a ui-sref="">Remove</a></td>-->
-                <td>{{ Acrylic Unit }}</td>
-                <td>{{ W002 }}</td>
-                <td>{{ 5/12/16 }}</td>
+                <td>{{ assignment.name }}</td>
+                <td>{{ assignment.number }}</td>
+                <td>{{ assignment.date }}</td>
             </tr>
             
         </table>
