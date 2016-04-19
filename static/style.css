@@ -164,3 +164,8 @@ button{
       width:80%;
   }
 }
+@media only screen and (min-width: 1920px) {
+  .upgradelogo{
+      width:85%;
+  }
+}
